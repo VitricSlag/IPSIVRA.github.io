@@ -3,7 +3,7 @@ import react from "@vitejs/plugin-react";
 import path from "node:path";
 
 export default defineConfig({
-  base: "/ipsivra/",
+  base: "/IPSIVRA.github.io/",
   plugins: [react()],
   resolve: {
     alias: {
