@@ -39,12 +39,15 @@ loads work offline.
 
 ## Build & deploy your own fork
 
-The site is configured for GitHub Pages at `/ipsivra/`. To deploy your own
-fork:
+The site is configured for GitHub Pages as a project-pages site at
+`/IPSIVRA.github.io/` (i.e. `https://vitricslag.github.io/IPSIVRA.github.io/`).
+To deploy your own fork:
 
 1. Fork this repo.
-2. If your repo isn't named `ipsivra`, edit `vite.config.ts` and set `base`
-   to match your repo path (e.g. `/my-fork/`).
+2. Edit `vite.config.ts` and set `base` to `/<your-repo-name>/` so it matches
+   the path GitHub Pages will serve from (e.g. `/my-fork/`). If you rename the
+   repo to `<your-username>.github.io` to make it a user-pages site, set
+   `base: "/"` instead.
 3. In repo settings, set **Pages → Source** to **GitHub Actions**.
 4. Push to `main`. The workflow at `.github/workflows/deploy.yml` builds and
    publishes via `actions/upload-pages-artifact` + `actions/deploy-pages`.
